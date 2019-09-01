@@ -19,7 +19,6 @@ class Palindrome extends Component {
         emptyArray = this.state.userInput.split('')
         emptyArray.reverse()
         let checkPalin = emptyArray.join('')
-        console.log(checkPalin)
         if (this.state.userInput === checkPalin){
             this.setState({palindrome: 'true'})
         } else this.setState({palindrome: 'false'})
